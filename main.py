@@ -46,6 +46,9 @@ def game():
     while True:
         try:
             num = int(input("Выберете номер клетки: "))
+            if num < 1 or num > 9:
+                print("Введите числовое значение от 1 до 9")
+                continue
         except:
             print("Введите числовое значение от 1 до 9")
             continue
